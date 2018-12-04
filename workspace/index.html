@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<title>Serina's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("Warped tour.jpg");
+    min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">My Music</a>
+    <a href="#artists" class="w3-bar-item w3-button">Artists</a>
+    <a href="#albums" class="w3-bar-item w3-button">Albums</a>
+    <a href="#tracks" class="w3-bar-item w3-button">Tracks</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">By:Serina Ishida</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">My<br>Music</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>My<br>Music</b></span>
+    <p><a href="#mymusic" class="w3-button w3-xxlarge w3-black">Click Here For Artists</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="my music">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Artists</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="artists(event, 'Page1');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Page 1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="artists(event, 'Page2');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Page 2</div>
+      </a>
+      <a href="javascript:void(0)" onclick="artists(event, 'page3');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Page 3</div>
+      </a>
+    </div>
+
+    <div id="Page1" class="w3-container music w3-padding-32 w3-white">
+      <h1><b>Real Friends</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2013</span></h1>
+      <p class="w3-text-grey"> Plain White T's-2005<a href="mailto:"></a></p>
+      <hr>
+   
+      <h1><b>Green Day</b> <span class="w3-right w3-tag w3-dark-grey w3-round">1994</span></h1>
+      <p class="w3-text-grey">Panic! at the Disco-2005</p>
+      <hr>
+      
+      <h1><b>Blink-182</b> <span class="w3-right w3-tag w3-dark-grey w3-round">1993</span></h1>
+      <p class="w3-text-grey">Rise Against-2003 </p>
+      <hr>
+
+      <h1><b>Catfish And The Bottlemen</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2015</span></h1>
+      <p class="w3-text-grey">Simple Plan-2002</p>
+      <hr>
+
+      <h1><b>Nirvana</b> <span class="w3-tag w3-red w3-round">Grunge</span><span class="w3-right w3-tag w3-dark-grey w3-round">1987</span></h1>
+      <p class="w3-text-grey">Sleeping with Sirens-2011</p>
+      <hr>
+
+      <h1><b>My Chemical Romance </b> <span class="w3-tag w3-grey w3-round">Pop Punk</span><span class="w3-right w3-tag w3-dark-grey w3-round">2004</span></h1>
+      <p class="w3-text-grey">State Champs-2011</p>
+    </div>
+
+    <div id="Page2" class="w3-container music w3-padding-32 w3-white">
+      <h1><b>Mayday Parade</b> <span class="w3-tag w3-grey w3-round">Emo/Hardcore</span> <span class="w3-right w3-tag w3-dark-grey w3-round">2007</span></h1>
+      <p class="w3-text-grey">All Time Low-2005</p>
+      <hr>
+   
+      <h1><b>Issues</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2014</span></h1>
+      <p class="w3-text-grey">Arctic Monkeys-2004</p>
+      <hr>
+      
+      <h1><b>Dance Gavin dance</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2008</span></h1>
+      <p class="w3-text-grey">Cage The Elephant-2008</p>
+      <hr>
+
+      <h1><b>Pierce The veil</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2007</span></h1>
+      <p class="w3-text-grey">Limp Bizkit-1995</p>
+    </div>
+
+
+    <div id="page3" class="w3-container music w3-padding-32 w3-white">
+      <h1><b>Red Hot Chili Peppers</b> <span class="w3-tag w3-grey w3-round">Rock</span><span class="w3-right w3-tag w3-dark-grey w3-round">1984</span></h1>
+      <p class="w3-text-grey">Senses Fail-2004</p>
+      <hr>
+   
+      <h1><b>Linken Park</b> <span class="w3-right w3-tag w3-dark-grey w3-round">1997</span></h1>
+      <p class="w3-text-grey">The Offspring-1989</p>
+      <hr>
+      
+      <h1><b>Cartel</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2005</span></h1>
+      <p class="w3-text-grey">Twenty One Pilots-2009</p>
+      <hr>
+      
+      <h1><b>Led Zeppelin</b> <span class="w3-right w3-tag w3-dark-grey w3-round">1969</span></h1>
+      <p class="w3-text-grey">The Neighbourhood-2013</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- Albums Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="albums">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Albums</h1>
+    
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Take Off Your Pants And Jacket-Blink-182</p>
+        <p>Chroma-Cartel</p>
+        <p>American Idiot-Green Day</p>
+        <p>Nevermind-Nirvana</p>
+        <p>The Balcony-Catfish and the Bottlemen</p>
+        <p>Diamond Dreams-Issues</p>
+        <p>Hybrid Theory-Linkin Park</p>
+        <p>Buddha-Blink-182</p>
+        <p>...and Justice for all-Metallica</p>
+        <p>The ride-Catfish and the bottlemen</p>
+        <p>Meteora-Linkin Park</p>
+        <p>Headspace-Issues</p>
+        <p>Revolution-green day</p>
+        <p>The Reason-Hoobastank</p>
+        <p>Danger days:The true lives of the fabulous killjoys-My chemical romance</p>
+        <p>Minutes to midnight-linkin park</p>
+        <p>Issues-Issues</p>
+        </p>
+      </div>
+      <div class="w3-col s6">
+        <p>Pull Yourself Back together-Real friends</p>
+        <p>I Love you-The Neighbourhood</p>
+        <p>No Pads, No Helmets-Simple Plan</p>
+        <p>Blurryface-Twenty One Pilots</p>
+        <p>Living Proof-State Champs</p>
+        <p>Lets Cheer To This-Sleeping with Sirens</p>
+        <p>The sufferer and the witness-Rise Against</p>
+        <p>A Fever you Can't Sweat out-Panic at the disco</p>
+        <p>smash-The Offspring</p>
+        <p>Wiped out-The neighbourhood</p>
+        <p>Selfish machines-Pierce the veil</p>
+        <p>The finer things-state champs</p>
+        <p>Underworld-Tonight Alive</p>
+        <p>Appeal to reason-rise against</p>
+        <p>Death of a bachelor-panic at the disco</p>
+        <p>If you were a movie, this would be your soundtrack-Sleeping with sirens</p>
+        <p>Collide with the sky-Pierce The veil</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<h4>CLICK THE LINK BELOW TO PLAY THE SCRATCH GAME, "JUST KEEP SWIMMING"</h4>
+<a href="https://scratch.mit.edu/projects/252628981/">JUST KEEP SWIMMING THE GAME</a>
+
+<!-- tracks (with google maps) -->
+<div id="googleMap" class="w3-grayscale-max" style="width:100%;height:400px;"></div>
+
+
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Tracks</h1>
+    
+     <div class="w3-row">
+      <div class="w3-col s6">
+  <p>AMBER-311</p>
+  <p>FLOURESCENT ADOLESCENT-arctic monkeys</p>
+  <p>ALL THE SMALL THINGS-blink-182</p>
+  <p>1985-bowling for soup</p>
+  <p>SPIDERHEAD-cage the elephant</p>
+  <p>RUNAWAY-cartel</p>
+  <p>7-catfish and the bottlemen</p>
+  <p>TALK TOO MUCH-coin</p>
+  <p>UNEASY HEARTS WEIGH THE MOST-dance gavin dance</p>
+  <p>OUT OF MY LEAGUE-fitz and the tantrums</p>
+  <p>ANYTHING ANYTHING-dramarama</p>
+  <p>THE MIDDLE-jimmy eat world</p>
+  <p>HOW I WANT YA-hudson thames</p>
+  <p>SARCASM-get scared</p>
+  <p>WHAT'S MY AGE AGAIN?-blink-182</p>
+  <p>CORNER STONE-arctic monkeys</p>
+  <p>DEAR MARIA, COUNT ME IN-all time low</p>
+  <p>BRAIN STEW-green day</p>
+  <p>ONLY FOR YOU-heartless bastards</p>
+  <p>HERO-issues</p>
+  <p>THE REASON-hoobastank</p>
+  <p>FIRST DATE-blink-182</p>
+  <p>DOUBLE HELIX-knuckle puck</p>
+  <p>STAIRWAY TO HEAVEN-led zeppelin</p>
+  <p>I DON'T WANNA BE IN LOVE-good charlotte</p>
+  <p>CLINT EASTWOOD-gorillaz</p>
+  <p>COMA-issues</p>
+  <p>SUGAR WE'RE GOING DOWN-fall out boy</p>
+  <p>STRAWBERRY SWISHER PART ONE-dance gavin dance</p>
+  <p>HANG ME UP TO DRY-cold war kids</p>
+  <p>SAY ANYTHING(ELSE)-cartel</p>
+  <p>ANTHEM PART ONE-blink-182</p>
+  <p>WHEN I COME AROUND-green day</p>
+  <p>REARRANGED-limp bizkit</p>
+  <p>BULLETPROOF HEART-my chemical romance </p>
+  <p>LITHIUM-nirvana</p>
+  <p>DEATH OF A BACHELOR-panic at the disco</p>
+  <p>ONE-metallica</p>
+  <p>JAIME ALL OVER-mayday parade</p>
+  <p>VALENTINE'S DAY-linkin park</p>
+  <p>HOME SOON-issues</p>
+  <p>BASKET CASE-green day</p>
+  <p>IF THESE SHEETS WERE STATES-all time low </p>
+  <p>POSTPONE-catfish and the bottlemen</p>
+  <p>DECEPTION-dance gavin dance</p>
+  <p>ONLINE SONGS-blink-182</p>
+  <p>MY OWN WORST ENEMY-lit</p>
+  <p>SHAKE IT-metro station</p>
+  <p>DON'T THREATEN ME WITH A GOOD TIME-panic at the disco</p>
+  <p>I'M NOT OKAY-my chemical romance</p>
+  <p>TEARS ON THE RUNWAY-issues</p>
+  <p>SOMEWHERE I BELONG-linkin park</p>
+  <p>COME AS YOU ARE-nirvana</p>
+  <p>LAST RESORT-papa roach</p>
+  <p>ABSOLUTELY(STORY OF A GIRL)-nine days</p>
+  <p>BLACKENED-metallica</p>
+  <p>DECODE-paramore</p>
+  <p>LA DEVOTEE-panic at the disco</p>
+  <p>LEAVE OUT ALL THE REST-linkin park</p>
+  <p></p>
+  
+   </div>
+      <div class="w3-col s6">
+        <p>I'VE GIVEN UP ON YOU-real friends</p>
+        <p>VACATION-simple plan</p>
+        <p>CRIMINAL-state champs</p>
+        <p>OUR TIME NOW-plain white t's</p>
+        <p>THE NEW NATIONAL ANTHEM-pierce the veil</p>
+        <p>1901-phoenix</p>
+        <p>PRAYER OF THE REFUGEE-rise against</p>
+        <p>KNOCK ME DOWN-red hot chili peppers</p>
+        <p>BRIGHTON ROCK-queen</p>
+        <p>IF YOU CAN'T HANG-sleeping with sirens</p>
+        <p>LINGER-the cranberries</p>
+        <p>NEAT NEAT NEAT-the damned</p>
+        <p>BLACK BUTTERFLIES AMD DEJA VU-the maine</p>
+        <p>LOVE ME-the 1975</p>
+        <p>SOMEBODY TOLD ME-the killers</p>
+        <p>WHEN I CAUGHT MYSELF-paramore</p>
+        <p>MY ALIEN-simple plan</p>
+        <p>GET BY-real friends</p>
+        <p>BULLETPROOF HEART-pierce the veil</p>
+        <p>1979-smashing pumpkins</p>
+        <p>NEW FACE-picturesque</p>
+        <p>BESITOS-pierce the veil</p>
+        <p>CAN'T STOP-red hot chili peppers</p>
+        <p>SAVIOR-rise against</p>
+        <p>NEW JERSEY MAKES THE WORLD TAKES-senses fail</p>
+        <p>LETS CHEER TO THIS-sleeping with sirens </p>
+        <p>HOW IT USED TO BE-state champs</p>
+        <p>I HATE EVERYTHING ABOUT YOU-three days grace</p>
+        <p>TEMPLE-tonight alive</p>
+        <p>HEAVY DIRTY SOUL-twenty one pilots</p>
+        <p>THE KILL-thirty seconds to mars</p>
+        <p>CHOP SUEY-system of a down</p>
+        <p>BURNING DOWN THE HOUSE-talking heads</p>
+        <p>MOVE ALONG-all american rejects</p>
+        <p>ZOMBIE-the cranberries</p>
+        <p>GIRLS-the 1975</p>
+        <p>TIGHTEN UP-black keys</p>
+        <p>ALL DAY AND ALL OF THE NIGHT-the kinks</p>
+        <p>SWEATER WEATHER-the neighbourhood</p>
+        <p>TEENAGE DIRTBAG-wheatus</p>
+        <p>COUGH SYRUP-young the giant</p>
+        <p>TO KELLY LEE-the speed of sound in seawater</p>
+        <p>GONE AWAY-the offspring</p>
+        <p>HEADFIRST-this wild life</p>
+        <p>HOW'S IT GOING TO BE-third eye blind</p>
+        <p>UNDERCOVER MARTYN-two door cinema</p>
+        <p>GEORGIA-tyler carter</p>
+        <p>POST ACID-wavves</p>
+        <p>CALIFORNICATION-red hot chili peppers</p>
+        <p>CHOCOLATE-the 1975</p>
+        <p>AERIALS-system of a down</p>
+        <p>FACE DOWN-the red jumpsuit apparatus </p>
+        <p>MR.BRIGHTSIDE-the killers</p>
+        <p>ALL THE SAME(ONCE A LIAR, ALWAYS A LIAR)-story untold</p>
+        <p>I WANT YOU TO-weezer</p>
+        <p>PAINT IT, BLACK-the rolling stones</p>
+        <p>BLISTER IN THE SUN-violent femmes</p>
+        <p>BLITZKRIEG BOP-the ramones</p>
+        <p>OCEAN AVENUE-yellowcard</p>
+             </div>
+    </div>
+    
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://vanswarpedtour.com/splash/" title="VANS WARPED TOUR" target="_blank" class="VANSWARPEDTOUR">VANS WARPED TOUR</a></p>
+</footer>
+
+
+
+</body>
+</html>
